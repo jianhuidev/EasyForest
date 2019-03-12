@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kys_8.easyforest.ui.activity.MDLoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        style="@style/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:transitionName="card"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            <ProgressBar
+                android:id="@+id/progress_bar_r"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="invisible" />
+            <com.example.kys_8.easyforest.weight.CircleImageView
+                android:id="@+id/avatar_nav_header"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@mipmap/logo"
+                android:scaleType="centerCrop"
+                app:border_width="2dp"
+                app:border_color="@color/google_yellow"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/title_register"
+                android:text="@string/title1_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+            <com.example.kys_8.easyforest.weight.CViewPager
+                android:id="@+id/cvp_register"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:transitionName="cvp"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/btn_forgot_password"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="24dp"-->
+                <!--android:layout_marginRight="24dp"-->
+                <!--android:text="请选择安全系数较高的密码哦！"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:transitionName="hint"/>-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:transitionName="frame">
+                <Button
+                    android:id="@+id/btn_to_login"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/to_login"
+                    android:textColor="@color/colorAccent" />
+                <Button
+                    android:id="@+id/btn_next_register"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/next"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"/>
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

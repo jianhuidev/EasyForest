@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@mipmap/ic_search"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/identify"
+        android:title="智能拍照识树"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/upload"
+        android:title="分享上传"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:title="关于"
+        app:showAsAction="never" />
+
+
+</menu>

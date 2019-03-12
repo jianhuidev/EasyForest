@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/line_info"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:ignore="NewApi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2">
+
+        <ImageView
+            android:id="@+id/img_tree_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/card_image_1"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp">
+
+        <TextView
+            android:id="@+id/title_info"
+            android:text="大家要好好。大家要好好保护水曲柳呀,保好保护水曲柳呀,保好保护水曲柳呀,保护水曲柳呀。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="3"
+            android:ellipsize="end" />
+        <RelativeLayout
+            android:id="@+id/line_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="时间：2018/09/20 11:01"
+                android:textColor="@color/gray"
+                android:textSize="8dp" />
+            <TextView
+                android:id="@+id/author_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="作者：腾讯大湘网"
+                android:textColor="@color/gray"
+                android:layout_toRightOf="@id/time_info"
+                android:layout_marginLeft="16dp"
+                android:textSize="8dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+
+</LinearLayout>

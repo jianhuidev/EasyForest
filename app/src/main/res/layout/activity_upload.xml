@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context=".ui.activity.UploadActivity">-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar_upload"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+        <!--&lt;!&ndash;<android.support.v4.widget.NestedScrollView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:layout_behavior="@string/appbar_scrolling_view_behavior">&ndash;&gt;-->
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:id="@+id/tv"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:text="拖动到此处，进行删除"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+            <!--<ScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:fillViewport="true"-->
+                <!--android:layout_height="match_parent">-->
+
+                <LinearLayout
+                    android:clipChildren="false"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.CardView
+                        android:clipChildren="false"
+                        android:id="@+id/frage_shell_cardview_1"
+                        android:clipToPadding="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:minHeight="200dp"
+                            android:clipChildren="false"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/et_upload"
+                                android:padding="16dp"
+                                android:hint="请输入内容..."
+                                android:background="@null"
+                                android:gravity="start"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                />
+                            <android.support.v7.widget.RecyclerView
+                                android:padding="16dp"
+                                android:id="@+id/activity_shell_recycler"
+                                android:paddingRight="100dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_height="wrap_content"
+                                android:clipToPadding="false"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="20dp"
+                        app:cardElevation="1dp"
+                        android:id="@+id/frage_shell_cardview_2"
+                        android:clipToPadding="false"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Switch
+                            android:id="@+id/anon_upload"
+                            android:text="匿名分享"
+                            android:layout_margin="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.v7.widget.CardView>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+            <!--</ScrollView>-->
+            </FrameLayout>
+
+        <!--</android.support.v4.widget.NestedScrollView>-->
+<!--</android.support.design.widget.CoordinatorLayout>-->
+

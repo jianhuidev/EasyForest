@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kys_8.easyforest.ui.activity.OpinionActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/progress_opinion"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/chat"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="感谢你的反馈"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light"/>
+
+            <LinearLayout
+                android:id="@+id/et_layout_opinion"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:padding="16dp"
+                tools:ignore="NewApi">
+
+                <EditText
+                    android:id="@+id/et_opinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="请填写你要反馈的信息"
+                    android:textSize="14sp"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/gray_light"/>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/affirm_opinion"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="62dp"-->
+                <!--android:padding="16dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:clickable="true"-->
+                <!--android:focusable="true"-->
+                <!--android:background="?android:attr/selectableItemBackground"-->
+                <!--tools:ignore="NewApi">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true">-->
+
+                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="24dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="24dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:src="@mipmap/submit"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_margin="5dp"/>&ndash;&gt;-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:text="确认提交"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:layout_margin="5dp"/>-->
+
+                <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

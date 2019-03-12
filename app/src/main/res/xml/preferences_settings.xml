@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="版本">
+
+        <Preference
+            android:key="check_v"
+            android:title="检查新版本"
+            android:summary="以为最新版本"/>
+        <Preference
+            android:key="version_info"
+            android:title="版本信息" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="账号管理">
+        <Preference
+            android:key="modify_pwd"
+            android:title="修改密码"
+            android:summary="已知旧密码，可以修改新密码"/>
+
+        <Preference
+            android:key="user_info"
+            android:title="个人信息"
+            android:summary="完善你的个人信息"/>
+
+        <Preference
+            android:key="byo_background"
+            android:title="默认背景"
+            android:summary="可以更换回软件自带的壁纸"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="其他">
+        <Preference
+            android:title="意见反馈"
+            android:key="opinion" />
+        <Preference
+            android:title="帮助"
+            android:key="help" />
+        <Preference
+            android:key="about_us"
+            android:title="关于我们" />
+    </PreferenceCategory>
+    <Preference
+        android:title="退出登录"
+        android:key="exit"/>
+    <!--<com.example.kys_8.easyforest.weight.MyPreference-->
+        <!--android:title="退出登录"-->
+        <!--android:key="exit" />-->
+
+</PreferenceScreen>

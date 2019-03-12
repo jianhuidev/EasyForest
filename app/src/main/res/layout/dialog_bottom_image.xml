@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="更换头像 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_margin="4dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_background" />
+    <TextView
+        android:id="@+id/album_avatar_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="从相册选择一张"
+        android:background="?android:selectableItemBackground"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_background" />
+    <TextView
+        android:id="@+id/photo_avatar_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="拍照一张"
+        android:background="?android:selectableItemBackground"/>
+
+    <TextView
+        android:text="更换背景 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_margin="4dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_background" />
+    <TextView
+        android:id="@+id/album_bg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="从相册选择"
+        android:background="?android:selectableItemBackground"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_background" />
+    <TextView
+        android:id="@+id/photo_bg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="拍照"
+        android:background="?android:selectableItemBackground"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_background" />
+    <TextView
+        android:id="@+id/photo_byg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="默认背景"
+        android:background="?android:selectableItemBackground"/>
+
+
+
+
+</LinearLayout>

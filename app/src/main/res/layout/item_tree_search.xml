@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+    <View
+        android:id="@+id/place_view"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/img_tree"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:scaleType="centerCrop"
+            android:transitionName="tree"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/img_tree"
+            android:layout_toEndOf="@id/img_tree"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/name_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="法斗观音座莲"
+                android:textColor="@color/date_color" />
+            <TextView
+                android:id="@+id/abc_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_tree"
+                android:layout_marginTop="@dimen/text_margin_very_small"
+                android:text="拉丁名：Angiopteris sparsisora" />
+
+            <TextView
+                android:id="@+id/rank_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abc_tree"
+                android:layout_marginTop="@dimen/text_margin_very_small"
+                android:layout_alignParentRight="true"
+                android:text="保护级别：一级保护植物" />
+        </LinearLayout>
+
+</RelativeLayout>

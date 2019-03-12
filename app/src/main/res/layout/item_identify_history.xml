@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_identify"
+    style="@style/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="12dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.kys_8.easyforest.weight.CircleImageView
+            android:id="@+id/tree_identify"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="12dp"
+            app:border_width="2dp"
+            android:layout_gravity="center_vertical"
+            app:border_color="@color/colorAccent"
+            android:src="@mipmap/card_image_1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/name_identify"
+                android:text="桦树"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/con_identify"
+                android:text="88.52%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+
+        <item
+            android:id="@+id/my_share"
+            android:icon="@mipmap/ic_my_record_share"
+            android:title="我的分享记录"/>
+        <item
+            android:id="@+id/identify_tree"
+            android:icon="@mipmap/ic_camera"
+            android:title="拍照识树"/>
+
+        <item
+            android:id="@+id/map"
+            android:icon="@mipmap/ic_map"
+            android:title="位置分布"/>
+
+        <item
+            android:id="@+id/collection"
+            android:icon="@mipmap/ic_collect"
+            android:title="收藏"/>
+
+        <item
+            android:id="@+id/identify_history"
+            android:icon="@mipmap/ic_iden_history"
+            android:title="林木识别记录"/>
+
+    </group>
+
+    <group android:id="@+id/group2">
+
+        <item
+            android:id="@+id/d_wallpaper"
+            android:icon="@mipmap/ic_byo_bg"
+            android:title="默认背景"/>
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@mipmap/ic_settings"
+            android:title="@string/setting"/>
+
+        <item
+            android:id="@+id/day_night"
+            android:icon="@mipmap/ic_day_night"
+            android:title="@string/day_night_switch"/>
+
+    </group>
+
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/opinion"
+            android:title="意见反馈"/>
+        <item
+            android:id="@+id/version"
+            android:title="版本信息"/>
+        <item
+            android:id="@+id/about_us"
+            android:title="关于林木查询平台"/>
+    </group>
+
+</menu>

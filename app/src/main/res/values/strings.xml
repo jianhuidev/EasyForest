@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">重点林木查询平台</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="fab_behavior">com.example.kys_8.easyforest.weight.FabBehavior</string>
+    <string name="tab_one">分类</string>
+    <string name="tab_two">地图</string>
+    <string name="tab_three">发现</string>
+    <string name="tab_four">收藏</string>
+    <string name="about_us">关于我们</string>
+    <string name="setting">设置</string>
+    <string name="meeting">会议</string>
+    <string name="enter">立即体验</string>
+    <string name="message">消息</string>
+
+    <string name="photo">拍照</string>
+    <string name="my_share">我的分享</string>
+    <string name="map">分布</string>
+    <string name="day_night_switch">日/夜间模式</string>
+    <string name="createnote">分享与记录</string>
+    <string name="to_register">没有账号？去注册</string>
+    <string name="back">返回</string>
+    <string name="submit">提交</string>
+    <string name="next">下一步</string>
+    <string name="finish">完成</string>
+    <string name="to_login">已有账号？返回登录</string>
+    <string name="title1_login">在您的设备上登录后，您将具有上传分享，评论发现等权限。</string>
+    <string name="title2_login">可根据您绑定的邮箱，进行密码重置，会向您的邮箱发送邮件，请注意查收</string>
+    <string name="title1_register">欢迎注册您的重点林木查询平台账号</string>
+    <string name="title2_register">简单验证</string>
+    <string name="title3_register">完善信息，邮箱可以帮助找回密码哦！</string>
+
+    <string name="timepicker_year">年</string>
+    <string name="timepicker_month">月</string>
+    <string name="timepicker_day">日</string>
+    <string name="timepicker_hour">时</string>
+    <string name="timepicker_min">分</string>
+    <string name="timepicker_finish">完成</string>
+    <string name="timepicker_title_default">设置</string>
+</resources>

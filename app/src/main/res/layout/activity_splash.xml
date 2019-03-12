@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.kys_8.easyforest.ui.activity.SplashActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <com.example.kys_8.easyforest.weight.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:border_color="@color/colorPrimary"
+            app:border_width="2dp"
+            android:src="@mipmap/logo"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/wellcome_banner"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="重点林木查询平台"
+            android:textColor="@color/colorWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_v"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/text_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V 1.0"
+            android:textSize="8sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/wellcome_text"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

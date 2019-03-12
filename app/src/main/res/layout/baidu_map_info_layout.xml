@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/map_info_img"
+            android:layout_width="76dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/tag_mulan"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/map_info_tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="标题标题标题标题"
+                    android:singleLine="true"
+                    android:maxEms="8"
+                    android:ellipsize="end"
+                    android:textColor="@color/date_color"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" />
+                <!--<TextView-->
+                    <!--android:id="@+id/map_info_tv_rank"-->
+                    <!--android:text="一级保护植物"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="8dp"-->
+                    <!--android:gravity="bottom" />-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="4dp">
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="法斗观音座莲观音座莲科一种植物。特产于我国云南东南部。"
+                    android:maxLines="3"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="查看树木详情"
+                    android:ellipsize="end"
+                    android:textSize="9dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:background="@mipmap/right"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

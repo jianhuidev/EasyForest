@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:orientation="vertical">
+    <!--<View-->
+        <!--android:id="@+id/place_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="16dp"-->
+        <!--android:visibility="gone"/>-->
+    <LinearLayout
+        android:id="@+id/recommend_layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/recommend_tv_bottom"
+            android:text="搜索推荐 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/date_color"
+            android:textStyle="italic" />
+        <ProgressBar
+            android:id="@+id/progress_title"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_tree"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_centerVertical="true"
+            android:src="@mipmap/card_image_1"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:scaleType="centerCrop"
+            android:transitionName="tree"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/img_tree"
+            android:layout_toEndOf="@id/img_tree"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/name_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="法斗观音座莲"
+                android:textColor="@color/date_color" />
+            <TextView
+                android:id="@+id/abc_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_tree"
+                android:layout_marginTop="@dimen/text_margin_very_small"
+                android:text="拉丁名：Angiopteris sparsisora" />
+
+            <TextView
+                android:id="@+id/rank_tree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abc_tree"
+                android:layout_marginTop="@dimen/text_margin_very_small"
+                android:layout_alignParentRight="true"
+                android:text="保护级别：一级保护植物" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

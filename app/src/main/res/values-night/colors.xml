@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4285F4</color>
+    <color name="colorPrimaryDark">#3367D6</color>
+    <color name="colorAccent">#FFC400</color>
+
+    <color name="colorbg">#FF424242</color>
+    <!--<color name="colorYellow">#FFC107</color>#ffffff-->
+    <color name="color_comment">#b2ffc107</color>
+    <color name="date_color">#FFC400</color>
+    <color name="gray">#999999</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_card">#cccccc</color>
+    <color name="gray_pressed">#818181</color>
+    <color name="gray_light">#666666</color>
+    <color name="gray_very_light">#E0E0E0</color>
+    <color name="gray_transparent">#6ce0e0e0</color>
+    <color name="gray_deep">#666666</color>
+    <color name="transparent_20">#20000000</color>
+    <color name="white">#fafafa</color>
+    <color name="white_guide">#ffffffff</color>
+    <color name="guide_unselected">#4D000000</color>
+    <color name="colorGreyTransparent">#50000000</color>
+    <color name="main_background">#EEEEEE</color>
+
+    <!--九宫格照片-->
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+
+    <!-- 图标颜色 -->
+    <color name="google_blue">#4285F4</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+    <color name="google_red">#EA4335</color>
+    <!--<color name="color_text">#6D6D6D</color>-->
+    <color name="background_card">#fff</color>
+    <color name="text_black_87">#de000000</color>
+
+    <color name="light_blue_500">#03A9F4</color>
+
+    <color name="blue_primary">#2196F3</color>
+
+    <color name="guide1">#CDDC39</color>
+    <color name="guide2">#009688</color>
+    <color name="guide3">#7ED2F6</color>
+</resources>

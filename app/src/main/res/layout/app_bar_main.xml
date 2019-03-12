@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:transitionName="appbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/colorWrite" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab_main"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:src="@drawable/ic_add_white_24dp"-->
+        <!--app:backgroundTint="@color/colorAccent"-->
+        <!--app:layout_scrollFlags="scroll|enterAlways"-->
+        <!--app:layout_behavior="@string/fab_behavior"/>-->
+    <com.example.kys_8.easyforest.weight.Fab
+        android:id="@+id/fab_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_add_white_24dp"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:layout_behavior="@string/fab_behavior"/>
+
+    <com.example.kys_8.easyforest.weight.FView
+        android:id="@+id/overlay_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <io.codetail.widget.RevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <!-- Sheet that contains your items -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fab_sheet_main"
+            style="@style/Widget.MaterialSheetFab.Sheet">
+
+            <!-- Sheet items -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fab_sheet_identify"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:drawableLeft="@mipmap/ic_camera"
+                    android:drawableStart="@mipmap/ic_camera"
+                    android:text="拍照识树" />
+
+                <TextView
+                    android:id="@+id/fab_sheet_map"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:drawableLeft="@mipmap/ic_map"
+                    android:drawableStart="@mipmap/ic_map"
+                    android:text="@string/map" />
+
+                <TextView
+                    android:id="@+id/fab_sheet_collect"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:drawableLeft="@mipmap/ic_collect"
+                    android:drawableStart="@mipmap/ic_collect"
+                    android:text="@string/tab_four" />
+
+                <!-- Reminder -->
+
+                <!-- Photo -->
+                <!--<TextView-->
+                    <!--android:id="@+id/fab_sheet_item_photo"-->
+                    <!--style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"-->
+                    <!--android:drawableLeft="@mipmap/ic_photo_camera_grey600_24dp"-->
+                    <!--android:drawableStart="@mipmap/ic_photo_camera_grey600_24dp"-->
+                    <!--android:text="@string/photo" />-->
+
+
+                <!-- Note -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:id="@+id/fab_sheet_item_note"
+                        style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                        android:drawableLeft="@mipmap/ic_record_share"
+                        android:drawableStart="@mipmap/ic_record_share"
+                        android:text="@string/createnote" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </io.codetail.widget.RevealLinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

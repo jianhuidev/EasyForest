@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_sort"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="0dp"
+    android:orientation="vertical"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="0dp">
+
+    <ImageView
+        android:id="@+id/img_sort"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/card_image_1"
+        android:transitionName="tree"/>
+
+    <TextView
+        android:id="@+id/ke_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="观音座莲科"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>
+
