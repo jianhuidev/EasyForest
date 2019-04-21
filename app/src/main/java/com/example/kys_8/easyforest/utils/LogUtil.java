@@ -11,7 +11,7 @@ public class LogUtil {
     public static final int ERROR = 5;
     public static final int NOTHING = 6;
 
-    public static  int level = VERROSE;
+    public static  int level = NOTHING;
 
     public static void v(String tag,String msg){
         if (level <= VERROSE){
