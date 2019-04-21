@@ -55,6 +55,7 @@ public class SortFragment extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sort, container, false);
+        LogUtil.e("Fragment","sssssss");
         initData();
         initView(view);
         initRecyclerView(view);
@@ -62,6 +63,7 @@ public class SortFragment extends Fragment implements View.OnClickListener{
     }
 
     private void initView(View view){
+        LogUtil.e("xxxSortFragment","执行了？？？4252627");
         mProgress = view.findViewById(R.id.progressBar_sort);
         mRefreshLayout = view.findViewById(R.id.refresh_layout);
         TextView mAmore = view.findViewById(R.id.a_more);

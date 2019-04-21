@@ -39,6 +39,7 @@ public class FindFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_find, container, false);
+        LogUtil.e("Fragment","xxxxxxxxx");
         initView(view);
         return view;
     }
@@ -46,6 +47,7 @@ public class FindFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        LogUtil.e("xxxFindFragment","onResume 会执行了？？？");
         if (GlobalVariable.isNeedRefresh){
             queryData();
             GlobalVariable.isNeedRefresh = false;
@@ -57,6 +59,7 @@ public class FindFragment extends Fragment {
         mRefresh = view.findViewById(R.id.refresh_find);
         mRefresh.setColorSchemeResources(R.color.google_blue,
                 R.color.google_yellow, R.color.google_red, R.color.google_green);
+        LogUtil.e("xxxFindFragment","执行了？？？");
         mRv = view.findViewById(R.id.rv_find);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         mRv.setLayoutManager(linearLayoutManager);
